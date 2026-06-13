@@ -5,7 +5,7 @@ import QuestionTimer from "../components/QuestionTimer";
 import { generateQuestions, generateQuestionsFromResume, getFeedback } from "../service/session";
 
 const ROLES = [
-  { title: "Frontend Developer", icon: "🎨" },
+  { title: "Frontend Developer",icon: "💻" },
   { title: "Backend Developer", icon: "⚙️" },
   { title: "Full Stack Developer", icon: "🚀" },
   { title: "Data Analyst", icon: "📊" },
@@ -130,7 +130,7 @@ export default function Interview() {
         </div>
 
         <h1 style={s.title}>AI Mock Interview</h1>
-        <p style={s.subtitle}>Practice with real AI feedback and walk in fully PrepSathi</p>
+        <p style={s.subtitle}>Practice with real AI feedback and walk into interviews fully prepared</p>
         <div style={s.divider} />
 
         <p style={s.label}>Select your target role</p>
