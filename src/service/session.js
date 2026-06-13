@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8080/api";
+const BASE_URL = "https://ai-mock-interview-production-e82c.up.railway.app/api";
 
-// ─── ATS ──────────────────────────────────────────────────────
+// ATS 
 export const checkAts = (resumeFile, jobDescription, sessionId) => {
   const formData = new FormData();
   formData.append("resume", resumeFile);
@@ -11,7 +11,7 @@ export const checkAts = (resumeFile, jobDescription, sessionId) => {
   return axios.post(`${BASE_URL}/ats/check`, formData);
 };
 
-// ─── Interview ────────────────────────────────────────────────
+//Interview 
 export const generateQuestions = (jobRole) =>
   axios.post(`${BASE_URL}/interview/questions`, { jobRole });
 
